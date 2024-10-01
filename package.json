@@ -4,15 +4,14 @@
   "description": "",
   "main": "./build/server.js",
   "scripts": {
-    "postinstall": "npm run prepare && npm run copy-env",
+    "postinstall": "npm run prepare",
     "prepare": "husky install",
     "start": "npm run build:clean && cross-env node --no-warnings ./build/server.js",
     "dev": "ts-node-dev -r tsconfig-paths/register ./src/server.ts",
     "build": "npx tsc",
     "build:clean": "rimraf build && npx tsc",
     "lint": "eslint --fix . --ext .ts",
-    "copy-env": "cp .env.sample .env",
-    "frontend": "ts-node-dev ../client/src/server.ts"
+    "copy-env": "cp .env.sample .env"
   },
   "author": "Adil Ansari",
   "license": "ISC",
