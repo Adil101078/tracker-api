@@ -46,8 +46,8 @@ class DatabaseCleaner {
 
 			if (storageUsed >= this.THRESHOLD_PERCENTAGE) {
 				Logger.info('Database storage is full | Performing Delete operation')
+				await this.moveDatabaseDocuments()
 			}
-			await this.moveDatabaseDocuments()
 		} catch (error) {
 			Logger.error(`Error in monitorAndCleanup: ${error}`)
 		}
