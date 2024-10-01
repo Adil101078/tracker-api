@@ -34,7 +34,7 @@ export class Application {
 
 	// Configuration and Setup
 	private config(): void {
-		this.app.set('port', App.Config.PORT || 9000)
+		this.app.set('port', App.Config.PORT || 5000)
 		this.app.set('env', App.Config.ENVIRONMENT || 'development')
 		this.app.disable('x-powered-by')
 	}
