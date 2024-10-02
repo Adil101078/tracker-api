@@ -1,5 +1,5 @@
 export const enum Models {
 	ServerStat = 'server-stats',
 	User = 'users',
-	Tracker = 'tracker-reports',
+	Tracker = 'api_call_trackers',
 }

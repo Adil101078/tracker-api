@@ -22,8 +22,8 @@ export interface ConfigInterface {
 		SENDER: string
 		RECEIVER: string
 	}
-  THRESHOLD_PERCENTAGE?: number
-  SECONDARY_DB?: string
+	THRESHOLD_PERCENTAGE?: number
+	SECONDARY_DB?: string
 }
 
 export default (): ConfigInterface => {
